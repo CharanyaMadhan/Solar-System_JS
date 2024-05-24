@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link href="style.css" rel="stylesheet"/> <!-- Link to the CSS file -->
+    <script src="script.js" defer></script> <!-- Link to the JS file, using defer to ensure the script runs after the HTML is loaded -->
+</head>
+<body>
+    <div class="shooting-star"></div>
+    <div class="star" style="--left: 10%; --top: 20px;"></div>
+    <div class="star" style="--left: 25%; --top: 40px;"></div>
+    <div class="star" style="--left: 40%; --top: 80px;"></div>
+    <div class="star" style="--left: 45%; --top: 30px;"></div>
+    <div class="star" style="--left: 80%; --top: 50px;"></div>
+    <div class="star" style="--left: 83%; --top: 53px;"></div>
+
+    <div class="Solar-System">
+        <div id="Neptune" class="planet" onmouseover="showinfo(this)" onmouseout="hideinfo()" data-name="Neptune" data-distance="4.5 Billion Km" data-fact1="Neptune has supersonic winds" data-fact2="It takes like more than 4 hours for light to reach Neptune from the Sun"></div>
+        <div id="Uranus" class="planet" onmouseover="showinfo(this)" onmouseout="hideinfo()" data-name="Uranus" data-distance="2.5 Billion Km" data-fact1="Uranus is more stormy than we thought" data-fact2="Uranus has only been visited by a single spacecraft, Voyager 2"></div>
+        <div id="Saturn" class="planet" onmouseover="showinfo(this)" onmouseout="hideinfo()" data-name="Saturn" data-distance="1.4 Billion km" data-fact1="No one knows how old Saturn’s rings are" data-fact2="Saturn has more moons than any other planet in the Solar System"></div>
+        <div id="Jupiter" class="planet" onmouseover="showinfo(this)" onmouseout="hideinfo()" data-name="Jupiter" data-distance="43.4 Billion km" data-fact1="Great Comet catcher planet" data-fact2="Jupiter has more than double the mass of all the other planets combined"></div>
+        <div id="Mars" class="planet" onmouseover="showinfo(this)" onmouseout="hideinfo()" data-name="Mars" data-distance="78 Billion km" data-fact1="Mars had a thicker atmosphere in the past" data-fact2="There have been more missions to Mars than any other planet"></div>
+        <div id="Earth" class="planet" onmouseover="showinfo(this)" onmouseout="hideinfo()" data-name="Earth" data-distance="20 Billion km" data-fact1="Great place to live for human beings" data-fact2="Earth isn't actually round"></div>
+        <div id="Venus" class="planet" onmouseover="showinfo(this)" onmouseout="hideinfo()" data-name="Venus" data-distance="12 Billion km" data-fact1="Venus doesn’t have any moons, and we aren’t sure why?" data-fact2="Venus is the hottest planet in the solar system"></div>
+        <div id="Mercury" class="planet" onmouseover="showinfo(this)" onmouseout="hideinfo()" data-name="Mercury" data-distance="9.8 Billion km" data-fact1="Mercury is hot, but not too hot for ice" data-fact2="Mercury’s craters are named after famous artists, musicians and authors"></div>
+        <div id="Sun" class="planet"></div>
+        
+        <div class="info-box" id="info-box">
+            <div id="name"></div>
+            <div id="distance"></div>
+            <div id="fact1"></div>
+            <div id="fact2"></div>
+        </div>
+    </div>
+</body>
+</html>

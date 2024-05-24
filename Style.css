@@ -1,0 +1,137 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+.Solar-System{
+    display:flex;
+    align-items:center;
+    position:relative;
+    justify-content: space-between; 
+    height:90vh;
+}
+#Sun {
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px 10px gold;
+}
+.planet {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    position: relative;
+}
+.planet:hover {
+    transform: scale(1.1);
+}
+
+#Mercury {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+}
+
+#Venus {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+}
+
+#Earth {
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+}
+
+#Mars {
+    width: 35px;
+    height: 35px;
+    background-color: red;
+}
+
+#Jupiter {
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+}
+
+#Saturn {
+    width: 70px;
+    height: 70px;
+    background-color: goldenrod;
+}
+
+#Uranus {
+    width: 65px;
+    height: 65px;
+    background-color: lightseagreen;
+}
+
+#Neptune {
+    width: 55px;
+    height: 55px;
+    background-color: blue;
+}
+
+.shooting-star {
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, white, transparent);
+    opacity: 0.8;
+    animation: shooting-star 5s linear infinite;
+}
+
+@keyframes shooting-star {
+    0% {
+        top: 10px;
+        left: -50px;
+        transform: rotate(45deg);
+    }
+    50% {
+        top: 50%;
+        left: 50%;
+        transform: rotate(45deg);
+    }
+    100% {
+        top: 90vh;
+        left: 110vw;
+        transform: rotate(45deg);
+    }
+}
+.star{
+    position:absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: glow 1.5s infinite alternate;
+    top: var(--top, 30px);
+    left: var(--left);
+}
+@keyframes glow {
+    from {
+        opacity: 0.5;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(2.2);
+    }
+}
+.info-box{
+    position: absolute;
+    bottom:10%;
+    left:50%;
+    color: white;
+    padding:20px;
+    border-radius: 5px;
+    display: none;
+    background-color: rgb(126, 122, 122);
+}
